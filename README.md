@@ -11,11 +11,11 @@ pip install -r requirements.txt
 echo "# PyThrone" > README.md
 git add README.md
 git commit -m "Add README.md with PyThrone"
-touch .gitignore
 git add .gitignore
 touch .gitignore
 echo "__pycache__/" >> .gitignore
 echo "*.pyc" >> .gitignore
+git add .gitignore
 git commit -m "Add .gitignore for Python project"
 touch LICENSE
 git add LICENSE
