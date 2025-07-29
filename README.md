@@ -8,7 +8,7 @@ A Python-powered project that rules the code kingdom.
 git clone https://github.com/yourusername/PyThrone.git
 cd PyThrone
 pip install -r requirements.txt
-echo "# PyThrone" > README.md
+echo "# PyThrone" README.md
 touch .gitignore
 git add .gitignore
 git commit -m "Add .gitignore for Python project"
