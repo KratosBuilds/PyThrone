@@ -8,11 +8,18 @@ A Python-powered project that rules the code kingdom.
 git clone https://github.com/yourusername/PyThrone.git
 cd PyThrone
 pip install -r requirements.txt
-echo "# PyThrone" README.md
+echo "# PyThrone" > README.md
+git add README.md
+git commit -m "Add README.md with PyThrone"
 touch .gitignore
 git add .gitignore
+touch .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.pyc" >> .gitignore
 git commit -m "Add .gitignore for Python project"
 touch LICENSE
+git add LICENSE
+git commit -m "Add MIT License"
 MIT License
 
 Copyright (c) 2025 [Ahsan]
