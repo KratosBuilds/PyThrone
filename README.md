@@ -8,17 +8,60 @@ A Python-powered project that rules the code kingdom.
 git clone https://github.com/yourusername/PyThrone.git
 cd PyThrone
 pip install -r requirements.txt
-echo "# PyThrone" > README.md
-git add README.md
-git commit -m "Add README.md with PyThrone"
-git add .gitignore
-touch .gitignore
-echo "__pycache__/" >> .gitignore
-echo "*.pyc" >> .gitignore
-git add .gitignore
-git commit -m "Add .gitignore for Python project"
+```
+
+## 🌟 Running the Application
+
+Start the FastAPI server:
+
+```bash
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+The application will be available at `http://localhost:8000`
+
+## 📚 API Endpoints
+
+### Items API
+
+#### Create a new item
+```bash
+curl -X POST "http://localhost:8000/items" \
+     -H "Content-Type: application/json" \
+     -d '{"name": "Sample Item", "description": "This is a sample item"}'
+```
+
+#### Get all items
+```bash
+curl -X GET "http://localhost:8000/items"
+```
+
+#### Get a specific item by ID
+```bash
+curl -X GET "http://localhost:8000/items/1"
+```
+
+### Other Endpoints
+
+#### Root endpoint
+```bash
+curl -X GET "http://localhost:8000/"
+```
+
+#### Quiz endpoint (existing)
+```bash
+curl -X GET "http://localhost:8000/quiz"
+```
+
+## 🗄️ Database
+
+The application uses SQLite as the database with SQLAlchemy ORM for managing items. The database file (`pythrone.db`) will be created automatically when you start the application.
+
+### Item Model
+- `id`: Integer (Primary Key)
+- `name`: String (Required)
+- `description`: Text (Optional)
+
 ## 📄 License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-git add README.md
-git commit -m "Add license reference to README"

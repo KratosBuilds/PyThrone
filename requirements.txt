@@ -1,0 +1,7 @@
+requests==2.31.0
+numpy
+flask==2.3.3
+fastapi
+uvicorn
+sqlalchemy
+aiosqlite
