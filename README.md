@@ -1,7 +1,5 @@
 # PyThrone
 
-A Python-powered project that rules the code kingdom.
-
 ## 🚀 Installation
 
 ```bash
