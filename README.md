@@ -1,5 +1,7 @@
 # PyThrone
 
+PyThrone is a headless, modular content management system designed for creators who want full control over their digital kingdom. It empowers users to publish, manage, and structure content through a flexible API — no bloated dashboards, just clean endpoints and creative freedom.
+
 ## 🚀 Installation
 
 ```bash
